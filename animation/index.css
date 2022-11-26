@@ -23,16 +23,19 @@
     background-color:aqua;
 }
 @keyframes animation_3{
-    0% {background-color: rgb(234, 145, 11); left: 0px; top: 0px;}
-    50% {background-color: rgb(27, 199, 76); left: 500px; top: 500;}
-    100% {background-color: chocolate;left: 000px; top: 00px;}
+    0% {; left: 0px; top: 0px;}
+    33% {; left: 500px; top: 500;}
+    66% {;left: 000px; top: 300px;}
+    100% {; left: 0px; top: 0px;}
 
 }
 .caja_3{
+    
     position: relative;
     animation-name: animation_3;
     width: 100px;
     height: 100px;
-    animation-duration: 1s;
-    background-color:rgb(234, 145, 11);
+    animation-duration: 4s;
+    
+    animation-iteration-count: infinite;
 }
