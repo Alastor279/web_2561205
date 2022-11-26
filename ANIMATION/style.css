@@ -1,0 +1,23 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+@keyframes animation_1 {
+from {background-color:blueviolet; left: 0px;}
+to{background-color: aqua; left: 100vw;}
+}
+
+.caja1{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    animation-name: animation_1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite1;
+
+
+}
+    
