@@ -4,3 +4,68 @@
     box-sizing: border-box;
 
 }
+ @keyframes animation_1 {
+    0%{background-color: red;left: 0px;top: 0px;border-radius: 0;}
+    33%{background-color: rgb(37, 32, 133);left:500px;top: 500px;border-radius: 50%;}
+    66% {background-color: yellow;left: 1000px;top: 0;500px;border-radius: 0%;}
+    100% {background-color: red;left: 0px;top: 0px;500px;border-radius: 0;}
+}
+    
+.caja_1 {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: animation_1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+/*
+@keyframes example {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+}
+    
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+}
+@keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+    
+div {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+}
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+  
+@keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+} */
