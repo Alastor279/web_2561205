@@ -4,9 +4,7 @@
     box-sizing: border-box;
 }
 
-@keyframes example {
-    from{}
-    to{}
+/* @keyframes example {
     0%{left: 0;background-color: brown;}
     50%{transform: rotate(90deg);}
     100%{ left: 100vw; transform: rotate(90deg);background-color: blueviolet;}
@@ -20,4 +18,87 @@
     animation-name: example;
     animation-duration: 4s;
     animation-iteration-count: infinite;
+} */
+
+/* nav {
+    display: flex;
+    background-color: aqua;
+}
+
+img {
+    height: 60px;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    list-style: none;
+} */
+
+@keyframes example {
+    0%{left: 0; top: 0;}
+    25%{left: 90%; 
+        top: 0;
+        transform: rotate(90deg);
+    }
+    50%{left: 90%;
+        top: 90%;
+        clip-path: polygon(50% 0, 0 100%, 100% 100%);
+        transform: rotate(180deg);
+    }
+    75%{left: 0; top: 90%;
+        transform: rotate(270deg);
+    }
+    100%{ left: 0; top: 0;
+        border-radius: 50%;  
+        transform: rotate(360deg);
+    }
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-color: bisque;
+    overflow: hidden;
+}
+
+/* img {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+} */
+
+.fig {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    position: relative;
+    animation-name: example;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+/* img {   
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: red;
+} */
+
+.cropped {
+    width: 150px; 
+    height: 150px; 
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.cropped img {
+    width: 120%;
+    height: 120%;
+    margin: -13px 0px 0px -14px;
 }
