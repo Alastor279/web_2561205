@@ -1,0 +1,41 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/* @keyframes animation_1{
+    0%{left:0px;top:0px;}
+    25%{left:1178px;top:0px;border-radius: 33px;}
+    50%{left: 1178px;top:548px;border-radius: 50px;}
+    75%{left:0px;top:548px;border-radius: 100px;}
+    100%{left:0px;top:0px;}
+}
+
+.a{
+    position:relative;
+    width:100px;
+    height:100px;
+    background-color: aqua;
+    animation-name: animation_1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+} */
+
+@keyframes animation_1 {
+    0%{left:0px;top:0px;}
+    25%{background-color:red;left:1178px;top:0px;clip-path: polygon(50% 0%, 100% 100%, 0% 100%);transform: rotate(360deg);}
+    50%{background-color:yellow;left: 1178px;top:548px;clip-path: polygon(0% 0%, 100% 0%, 50% 100%);transform: rotate(0deg);}
+    75%{background-color:green;left:0px;top:548px;clip-path: polygon(33% 0%, 66% 0%, 100% 33%, 100% 66%, 66% 100%, 33% 100%, 0% 66%, 0% 33%);transform: rotate(-360deg);}
+    100%{left:0px;top:0px;}
+}
+
+.a{
+    position:relative;
+    width:100px;
+    height:100px;
+    background-color: purple;
+    animation-name: animation_1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
