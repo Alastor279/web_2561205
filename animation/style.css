@@ -4,9 +4,11 @@
     box-sizing: border-box;
 }
 @keyframes animation_1 {
-    0% {background-color: red;left: 0px;}
-    50% {background-color: yellow;position: relative;left: 500px;top: 500px;}
-    100% {background-color: blue;left: 1000px;top: 0;}
+    0% {background-color: red;left: 0px; top: 0px;}
+    25% {background-color: yellow;left: 0px;top: 455px; border-radius: 100%;}
+    50% {background-color: blue;left: 1165px;top: 455px; transform: rotate(180deg);}
+    75% {background-color: rgb(65, 109, 0); left: 1165px; top: 0px;}
+    100% {background-color: black;left: 0px; top: 0px;}
 }
 
 .caja_1 {
@@ -15,8 +17,9 @@
     height: 200px;
     background-color: red;
     animation-name: animation_1;
-    animation-duration: 5s;
+    animation-duration: 4s;
     animation-iteration-count: infinite;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
 img{
     width: 200px;
