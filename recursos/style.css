@@ -1,0 +1,77 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+@keyframes animation_1 {
+    100%{background-color: rgb(133, 2, 2); left: 0px; top: 0px;}
+    50%{background-color: orangered; left: 500px; top: 50px;}
+    0%{background-color: orangered; left: 1000px; top: 500px;}
+    
+}
+@keyframes animation_2 {
+    0%{background-color: rgb(133, 2, 2); left: 0px; top: 0px;}
+    50%{background-color: orangered; left: 500px; top: 50px;}
+    100%{background-color: orangered; left: 1000px; top: 500px;}
+    
+}
+@keyframes animation_3 {
+    0%{background-color: rgb(133, 2, 2); left: 0px; top: 100px;}
+    50%{background-color: orangered; left: 500px; top: 50px;}
+    100%{background-color: orangered; left: 1000px; top: 0px;}
+    
+}
+@keyframes animation_4 {
+    100%{background-color: rgb(133, 2, 2); left: 0px; top: 100px;}
+    50%{background-color: orangered; left: 500px; top: 50px;}
+    0%{background-color: orangered; left: 1000px; top: 0px;}
+    
+}
+.caja_1{
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    position: relative;
+    animation-name: animation_1; 
+    animation-duration: 5s;
+    border-radius: 10px;
+    border: double 2px;
+    animation-iteration-count: infinite;
+}
+.caja_2{
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    position: relative;
+    animation-name: animation_2; 
+    animation-duration: 5s;
+    border-radius: 10px;
+    border: double 2px;
+    animation-iteration-count: infinite;
+}
+.caja_3{
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    position: relative;
+    animation-name: animation_3; 
+    animation-duration: 5s;
+    border-radius: 10px;
+    border: double 2px;
+    animation-iteration-count: infinite;
+}
+.caja_4{
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    position: relative;
+    animation-name: animation_4; 
+    animation-duration: 5s;
+    border-radius: 10px;
+    border: double 2px;
+    animation-iteration-count: infinite;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
