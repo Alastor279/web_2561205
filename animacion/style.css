@@ -4,3 +4,32 @@
     box-sizing: border-box;
 
 }
+@keyframes animacion_1{
+    0% {background-color: red;left: 0px;top: 0px;}
+    33%{background-color: blue;left: 500px;top: 500px;}
+    66%{background-color: gold;left: 1000px;top: 0;}
+    100%{background-color: blueviolet;left: 0px;top: 0px;}
+}
+
+.caja_1 {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
+    animation-name: animacion_1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    
+}
+.caja_2{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    animation-name: animacion_2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+    
+
+}
+
