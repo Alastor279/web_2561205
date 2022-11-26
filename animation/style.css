@@ -1,0 +1,33 @@
+@keyframes animation1 /*el conrtrol de la animacion es la accion*/
+{
+    0%{background-color: brown;left:0px;top:0px} /*inicia en la posicion 0*/
+    50%{background-color: black; left:500px;top:500px;}
+    70%{background-color: aquamarine;left:1000px;top:0px} /*termina en la posicion 500px*/
+    100%{background-color: brown;left:0px;top:0px}
+}
+@keyframes animation2 /*el conrtrol de la animacion es la accion*/
+{
+    from{background-color: brown;left:0px;top:0px} /*inicia en la posicion 0*/
+    /*50%{background-color: black; left:500px;top:500px;}*/
+    to{background-color: aquamarine;left:1000px} /*termina en la posicion 500px*/
+}
+
+
+.caja_1{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    animation-name: animation1 ; /*se llama la animacion*/
+    animation-duration: 6s; /*duracion de la animacion*/
+    background-color: brown;
+    animation-iteration-count:infinite ;
+}
+
+.caja2{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    animation-name: animation2 ; /*se llama la animacion*/
+    animation-duration: 6s; /*duracion de la animacion*/
+    animation-iteration-count:infinite ;
+}
