@@ -1,3 +1,23 @@
+nav{background-color: blue;
+    height: 20vh;
+}
+.icono{
+    padding: 20px;
+    margin-top: auto;
+    position: relative;
+    background-color: rgba(137, 43, 226, 0);
+    height: 200px;
+    width: 200px;
+    animation-name: icono1;
+    animation-duration: 2s;
+    animation-iteration-count: infiite;
+}
+@keyframes icono1{
+    0%{background-color: aqua; left: 0%; clip-path: polygon(50% 0%, 70% 30%, 100% 50%, 70% 70%, 50% 100%, 30% 70%, 0% 50%, 30% 30% )}
+    50% {background-color: brown; left: 45%; clip-path: polygon(50% 0%, 70% 30%, 100% 50%, 70% 70%, 50% 100%, 30% 70%, 0% 50%, 30% 30% )}
+    100%{background-color: aqua; left: 0%; clip-path: polygon(50% 0%, 70% 30%, 100% 50%, 70% 70%, 50% 100%, 30% 70%, 0% 50%, 30% 30% ); transform: rotate(1800deg)}
+}
+
 .caja_1{
     animation-name: animation_1;
     width: 100px;
@@ -23,19 +43,37 @@
     background-color:aqua;
 }
 @keyframes animation_3{
-    0% {; left: 0px; top: 0px;}
-    33% {; left: 500px; top: 500;}
-    66% {;left: 000px; top: 300px;}
-    100% {; left: 0px; top: 0px;}
+    0% { left: 0px; top: 0px;}
+    20% { left:1820px; top: 000;}
+    40% {left: 1820px; top: 550px;}
+    60% {left: 00px; top: 550px;}
+    80% { left: 0px; top: 0px;}
+    100% { left: 910px; top: 260px;}
 
 }
-.caja_3{
+/*.caja_3{
     
     position: relative;
     animation-name: animation_3;
     width: 100px;
     height: 100px;
     animation-duration: 4s;
-    
     animation-iteration-count: infinite;
+}*/
+.caja_4{
+    position: relative;
+    animation-name: animation_4;
+    width: 150px;
+    height: 150px;
+    animation-duration: 4s;
+    background-color: blue;
+    animation-iteration-count:infinite;
+}
+@keyframes animation_4{
+    0% {left: 0px; top: 0px; clip-path: circle(50px); background-color: aqua; }
+    20% {left:1820px; top: 000; clip-path: ellipse(50% 20%);background-color: black; }
+    40% {left: 1820px; top: 550px; clip-path: polygon(33% 0%, 66% 0%, 100% 33% ,100% 66% , 66% 100%,33% 100% , 0% 66% , 0% 33%); background-color: blue;}
+    60% {left: 00px; top: 550px; clip-path: polygon(55% 0%, 100% 100%, 0% 100%);background-color: blueviolet;}
+    80% {left: 0px; top: 0px; clip-path: polygon(50% 0%, 70% 30%, 100% 50%, 70% 70%, 50% 100%, 30% 70%, 0% 50%, 30% 30% );background-color: brown;}
+    100% {left: 910px; top: 260px;background-color: cadetblue;border-color: aqua; border: 5px;transform:rotate(180deg)}
 }
