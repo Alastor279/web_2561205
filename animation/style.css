@@ -1,5 +1,19 @@
 *{
     padding:0%;
     margin:0%;
-    border:2px;
+    box-sizing: border-box;
+}
+@keyframes animation_1{
+    0% {background-color: #404853;left: 0px;top: 0%}
+    50% {background-color: rgb(255, 94, 0);left:500px;top:500px}
+    100%{background-color: yellow;left:1000px;top:0}
+}
+
+.caja_1{
+    width: 100px;
+    height: 100px;
+    background-color: chartreuse;
+    animation-name: animation_1;
+    animation-duration: 5s;
+    position: relative;
 }
