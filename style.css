@@ -1,0 +1,29 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+@keyframes animation_1{
+    0%{background-color: brown;left: 0%;top: 0vh;}
+    25%{background-color: darkgray;left:90%; top: 0vh;border-radius:54%; transform: rotate(360deg)}
+    50%{background-color:burlywood; left: 90%;top: 85vh;} 
+    75%{background-color: black; left: 0%; top:85vh; }
+    100%{background-color: cornflowerblue;left: 0%; top:0vh;}
+}
+@keyframes animation_2{
+0%{background-color: burlywood; right: 0px;}
+50%{background-color: darkgray; right: 1600px;}
+100%{background-color: brown;}
+}
+.caja_1{
+position:relative;
+    width: 200px;
+    height: 200px;
+    background-color: chocolate;
+    animation-name: animation_1;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    margin: 2px;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
