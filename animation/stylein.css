@@ -50,9 +50,7 @@ nav{
         background-color: blue;
         
     }
-.logo{ 
-    padding:40px;
-}
+
 .logo img{
     height: 50px;
     width: 50px;
@@ -69,8 +67,13 @@ nav{
     height: 100px;
     width: 100px;
     animation-name: anime;/*aca se llama la animacion*/
-    animation-duration: 6s;
-   
+    animation-duration: 6s; 
+}
+nav{
+    display: flex;
+    justify-content:space-between;
+    text-align:  center;
+    padding: 40px;
 }
 
 
