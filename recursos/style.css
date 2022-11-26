@@ -1,0 +1,25 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+@keyframes a1{
+    0% {background-color: red;left: 0px;}
+    50% {background-color: yellow;left: 500px;top: 500px;}
+    100% {background-color:burlywood; left:1000px;top: 0;}    
+}
+
+.caja1 {
+position: relative;
+width: 250px;
+height:250px;
+background-color: beige;
+animation-name:a1;
+animation-duration: 8s;
+border-radius: 2px;
+animation-iteration-count: infinite;
+}
+img{
+    width: 250px;
+    height: 250px;
+}
