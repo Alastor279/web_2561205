@@ -1,9 +1,9 @@
 *{
     margin: 0%;
     padding: 0%;
-    box-sizing: border-box; /*box-sizing para que el espacio de las cajas no se consuman hacia dentro sino a hacia fuera*/
+    box-sizing: border-box; /*box-sizing para que el espacio de las cajas ocupe hacia dentro no a hacia fuera*/
 }
-@keyframes animation_1 {/*keyframes es el control de la animacion,y se coloca el nombre de la animacion*/
+@keyframes animation_2 {/*keyframes es el control de la animacion,y se coloca el nombre de la animacion*/
     from{background-color: red;left:0px;}
     to{ background-color: aqua;left:1000px;} 
     /*position relati para mover moentania mente la caja*/
@@ -13,30 +13,64 @@
     100%{background-color:brown;left:1000px;top:0px;}/*fin de la posicion*/
 }
 
-@keyframes animation_2 {/*keyframes es el control de la animacion,y se coloca el nombre de la animacion*/
-   /** from{background-color: red;left:0px;}
+@keyframes animation_1 {/*keyframes es el control de la animacion,y se coloca el nombre de la animacion*/
+   /* from{background-color: red;left:0px;}
     to{ background-color: aqua;left:1000px;} 
     /*position relati para mover moentania mente la caja*/
 
-    0%{background-color:0;left:0px;top:0px;}/*% inicion de posicion*/
-    50%{background: color 0;;left:500px;top: 500px;}
-    100%{background-color:0;left:1000px;top:0px;}/*fin de la posicion*/
+    /**para movernos a las esquinas con la caja*/
+
+    /*click path polygon es para deformar la caja
+    
+    transform: rotate y colocas los grados que va arotar y le agragas deg.*/
+    0%{left: 0px;top:0px}
+    25%{left:1150px;top:0px;clip-path: polygon(50% 0%,0% 100%,100% 100%);transform: rotate(240deg);}
+    50%{left:1150px;top:500px;clip-path: polygon(33% 0%,66% 0%,100% 33%,100% 66%,66% 100%,33% 100%,0% 66%,0% 33%);}
+    75%{left:0px;top:500px;transform: rotate(0deg);border-radius: 26%;}
+    100%{left:0px;top:0px}/*fin de la posicion*/
+
+
+
+
 }
-.caja_1{
+
+/**.caja_1{
     position: relative;
     width:100px ;
     padding:100px;
     background-color:red ;
     animation-name: animation_1;/*aca se llama la animacion*/
-    animation-duration: 6s;
+   /* animation-duration: 6s;
     animation-iteration-count: infinite;/*animation-iteration-count: infinite es para que la animacion se ejecute infinitamente*/
+
+
+nav{
+        height: 20vh;
+        width: 100%;
+        background-color: blue;
+        
+    }
+.logo{ 
+    padding:40px;
 }
-.caja2{
+.logo img{
+    height: 50px;
+    width: 50px;
+   
+}
+@keyframes anime{
+ 0%{left: 0px;top:0%;transform: rotate(360deg);}
+ 50%{left:1000px;}
+ 100%{left:0px;}
+
+}
+.logo{
     position: relative;
-    width:100px ;
-    padding:100px;
-    background-color:0;
-    animation-name: animation_2;/*aca se llama la animacion*/
+    height: 100px;
+    width: 100px;
+    animation-name: anime;/*aca se llama la animacion*/
     animation-duration: 6s;
-    animation-iteration-count: infinite;/*animation-iteration-count: infinite es para que la animacion se ejecute infinitamente*/
+   
 }
+
+
