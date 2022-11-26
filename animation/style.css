@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes example {
+    from{}
+    to{}
+    0%{left: 0;background-color: brown;}
+    50%{transform: rotate(90deg);}
+    100%{ left: 100vw; transform: rotate(90deg);background-color: blueviolet;}
+}
+
+.caja1 {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
