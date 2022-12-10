@@ -1,0 +1,25 @@
+<!--nota para conexion github
+*git init para inicializar
+*git add y nombre archivo para subir
+*git commit -m para subir todos los archivos es para la primera 
+*git branch -m main para crear un brannch por primera vez
+*git config --global user.email ingresamos el email
+touch es para crear un arcchivo ejemplo touch hola_mundo.html
+mkdir espara crear carpetas ejemplo mkdir nuevacarpeta
+NOTA se debe crear  un commit cada ACTUALIZACION
+git remote add origin https://github.com/chiguiro0308/firu-michi.git paara linkear al github
+$ git push -u origin main  es para conectar nuestro proyecto con github
+git remote rm origin para eliminar la conexion
+git branch front_end o back_end para crear ramas
+git checkout  front_end para movernos  de rama 
+git commit -am es para agregar todos loa archivos ya en stage area
+DESCARGAR GIT STORY  y git graphextension
+usario chiguiro0308
+contraseña 1153463200cesar
+git clone mas el link del repositorio para clonar un repositatrio basicamente es para descargar
+git remote remove origin para eliminar una conexion
+git pull descarga todo
+git puLL  origin con el nombre de la rama descargar especificamente las actualizuaciones de la rama
+touch es para crear archivos 
+mkdir es para crear carpetas
+-->
